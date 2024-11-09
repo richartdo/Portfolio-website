@@ -1,0 +1,598 @@
+/* Basic Reset */
+
+/* Header */
+.custom-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightblue;
+  color: #ffffff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays above other content */
+  background: rgba(0, 0, 0, 0.8); /* Slightly transparent dark background */
+  backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.custom-header .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-header .dropdown {
+  margin-right: auto; /* Align logo and dropdown to the left */
+}
+
+.custom-header .d-flex {
+  margin-left: auto; /* Align remaining components to the right */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .custom-header .container-fluid {
+      flex-direction: column;
+  }
+}
+
+
+
+/* Heroes styling */
+.custom-heroes {
+  color: #ffffff; /* White text on dark background */
+  background: #8BDEFF; /* Match the floating section overlay */
+  backdrop-filter: blur(10px); /* Adds a blur for consistency */
+  border-radius: 10px; /* Rounded corners to match floating sections */
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Floating shadow effect */
+  /* width: 1000rem; */
+
+  font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.custom-heroes img {
+  border-radius: 20%;
+  /* transform: rotate(-10deg); Slanted to the left */
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.heroes:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+.name-color {
+  color: navy;
+}
+
+.h1-color {
+  color: coral;
+}
+
+.intro-color {
+  color: #000000;
+  font-size: x-large;
+}
+
+
+/* Skills section styling */
+.custom-skills{
+  background-color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fs-2.text-body-emphasis {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.fs-2.text-body-emphasis::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #0056b3;
+  opacity: 0.7;
+  transition: background-color 0.3s;
+}
+.fs-2.text-body-emphasis:hover::after {
+  background-color: #ff6600;
+}
+
+
+
+/* Body styling */
+body{
+  background-color: #3161A3;
+  color: #e0e0e0; /* Light text for readability */
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container Styling */
+  .container.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  /* Image Section */
+  .contact-image {
+    flex: 1 1 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+  }
+  
+  .contact-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  /* Form Styling */
+  form {
+    flex: 2 1 500px;
+    padding: 30px;
+  }
+  
+  form h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  form textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  form button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Captcha Section */
+  .captcha {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  
+    .contact-image img {
+      border-radius: 8px 8px 0 0;
+    }
+  }
+
+ 
+
+
+
+
+/* General Reset and Box-Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+/* Responsive Text */
+h1, h2, p {
+    color: #ffffff; /* Text color in hero section */
+}
+
+.container, .custom-heroes, .album, #hanging-icons {
+    padding: 20px;
+}
+
+/* Cards and Buttons */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+}
+
+.btn-outline-secondary {
+    border-color: #343a40;
+    color: #343a40;
+}
+
+/* Footer, Hero, and Album Adjustments */
+.album {
+    background-color: #f1f3f5;
+}
+
+#hanging-icons h2 {
+    color: #343a40;
+}
+
+
+
+
+
+/* Floating Effect for Sections from Heroes Downwards */
+.section {
+    background: rgba(255, 255, 255, 0.05); /* Slightly transparent dark overlay */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Floating shadow */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    background-color: rgba(30, 30, 30, 0.9); /* Darker background for dropdown */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Dropdown shadow */
+}
+
+/* Dropdown Links Styling */
+.dropdown-menu a {
+    color: #f1f1f1; /* Light text color for dropdown links */
+    padding: 8px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #333333; /* Highlight color on hover */
+    color: #ffffff; /* Bright color on hover */
+}
+
+/* Additional Hover Effect on Floating Sections */
+.section:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Add padding to the top of your main content to account for the fixed header */
+main {
+  padding-top: 80px; /* Adjust to match the header height */
+}
+
+.custom-projects{
+  background-image: url(./assets/images/pic9.jpeg);
+  /* background-color: #121212; */
+}
+
+.custom-text{
+  color: black;
+}
+
+.custom-contactform{
+  background-image: url(./assets/images/pic8.jpeg);
+}
+
+.projects-heading {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: silver;
+  border-bottom: 3px solid #ff6600;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 2rem;
+}
+
+
+
+/* Custom styles for responsiveness */
+
+/* General container padding adjustments */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Ensure the hero section image scales nicely on smaller screens */
+.custom-heroes img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust header for smaller screens */
+.custom-header {
+  /* background-color: #f8f9fa; Light background for header */
+}
+
+.custom-header .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-header .dropdown-toggle {
+  padding: 0;
+}
+
+/* Customize heading and text inside the hero section */
+.custom-heroes h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  /* color: #1a1a1a; */
+}
+
+.custom-heroes p {
+  font-size: 1.2rem;
+  /* color: #555; */
+}
+
+/* Adjust button sizes */
+.btn-lg {
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+}
+
+/* Skills Section */
+.custom-skills h2 {
+  font-size: 2rem;
+  /* color: #333; */
+  margin-bottom: 20px;
+}
+
+/* Responsive card layout */
+.custom-projects .card {
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.2s ease-in-out;
+}
+
+.custom-projects .card:hover {
+  transform: scale(1.05);
+}
+
+/* Ensure images inside cards scale properly */
+.custom-projects .card-img-top {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+}
+
+/* Footer responsiveness */
+footer {
+  /* background-color: #f1f1f1; */
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Contact form adjustments */
+.contact-form {
+  padding: 30px;
+  /* background-color: #f8f9fa; */
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  /* background-color: #007bff; */
+  /* color: white; */
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+/* Side image for contact form */
+.contact-image {
+  display: none;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .container-fluid {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .custom-header .dropdown-toggle {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-header .container-fluid {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .custom-header .dropdown-toggle {
+      margin-bottom: 10px;
+  }
+
+  .custom-heroes h1 {
+      font-size: 2rem;
+  }
+
+  .custom-heroes p {
+      font-size: 1rem;
+  }
+
+  .btn-lg {
+      font-size: 1rem;
+      padding: 0.6rem 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-header .container-fluid {
+      padding: 0 20px;
+  }
+
+  .custom-heroes {
+      text-align: center;
+  }
+
+  .custom-heroes img {
+      max-width: 80%;
+  }
+
+  .custom-heroes h1 {
+      font-size: 1.8rem;
+  }
+
+  .custom-heroes p {
+      font-size: 1rem;
+  }
+
+  .custom-projects .row-cols-1 {
+      display: block;
+  }
+
+  .custom-projects .card {
+      margin-bottom: 15px;
+  }
+
+  .contact-image {
+      display: block;
+      margin-bottom: 20px;
+  }
+
+  footer .nav {
+      text-align: center;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea,
+  .contact-form button {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-header .container-fluid {
+      text-align: center;
+  }
+
+  .custom-heroes h1 {
+      font-size: 1.5rem;
+  }
+
+  .custom-heroes p {
+      font-size: 0.95rem;
+  }
+
+  .custom-projects .row-cols-1,
+  .custom-projects .row-cols-sm-2 {
+      display: block;
+      margin-bottom: 20px;
+  }
+
+  .contact-form button {
+      padding: 10px;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+      font-size: 0.9rem;
+  }
+}
+
+
+

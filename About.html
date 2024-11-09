@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <style>
+        body{
+            color: antiquewhite;
+            background-color: black;
+        }
+
+        .content{
+            color: aqua;
+
+        }
+
+        .about-me{
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+            flex-direction: column;
+            background-image: url(./assets/images/contact-card.webp);
+            width: 100%;
+            height: 100vh;
+        }
+
+        @media (max-width: 768px) {
+            .about-me{
+                flex-direction: column;
+            }
+        }
+        .title{
+            background-color: blueviolet;
+            border: 10px solid grey;
+            padding: 20px;
+            border-radius: 30%;
+            font-size: 30px;
+        }
+
+        .content{
+            background-color: black;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-me">
+    <div class="title">
+    <h1><u>About me</u></h1>
+    </div>
+
+    <div class="content">
+    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+    </div>
+
+</div>
+</body>
+</html>
