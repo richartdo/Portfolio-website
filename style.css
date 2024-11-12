@@ -118,7 +118,7 @@ header {
 
 /* Body styling */
 body{
-  background-color: #3161A3;
+  background: linear-gradient(to right, #1230AE, #6439FF, #4F75FF, #00CCDD);
   color: #e0e0e0; /* Light text for readability */
 }
 
